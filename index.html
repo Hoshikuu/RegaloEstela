@@ -3,119 +3,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Feliz 20, Estela 🎉</title>
+  <title>¡Feliz Cumpleaños!</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff6b6b;--muted:#9aa4b2}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071229 0%, #071b2c 60%); color:#e6eef6; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px}
-    .card{width:100%; max-width:900px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:18px; padding:28px; box-shadow:0 10px 30px rgba(2,6,23,0.6); position:relative; overflow:hidden}
-    header{display:flex; gap:18px; align-items:center}
-    .avatar{width:96px; height:96px; border-radius:14px; background:linear-gradient(135deg,#3b82f6,#8b5cf6); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:28px}
-    h1{margin:0; font-size:28px}
-    p.lead{margin:6px 0 0; color:var(--muted)}
-    .age{display:inline-block; background:rgba(255,107,107,0.12); color:var(--accent); padding:6px 10px; border-radius:999px; font-weight:600; margin-left:8px}
-    main{display:grid; grid-template-columns:1fr 320px; gap:20px; margin-top:20px}
-    .left{padding:18px}
-    .gift-box{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; padding:20px; text-align:center}
-    .gift-code{font-family:monospace; font-size:20px; letter-spacing:2px; margin:14px 0; padding:12px 10px; background:rgba(255,255,255,0.02); border-radius:10px}
-    .btn{display:inline-flex; gap:8px; align-items:center; padding:10px 14px; border-radius:10px; border:0; cursor:pointer; font-weight:600}
-    .btn-primary{background:linear-gradient(90deg,#ff7b7b,#ffb86b); color:#08101a}
-    .btn-ghost{background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--muted)}
-    .right{padding:18px}
-    .panel{background:rgba(255,255,255,0.02); padding:16px; border-radius:12px}
-    footer{margin-top:18px; color:var(--muted); font-size:14px}
-    .small{font-size:13px; color:var(--muted)}
-    textarea{width:100%; min-height:120px; border-radius:12px; padding:12px; border:none; background:rgba(255,255,255,0.05); color:#e6eef6; font-family:inherit; resize:vertical; font-size:15px}
-    textarea:focus{outline:2px solid var(--accent)}
-    /* fireworks/confetti canvas */
+    body{
+      margin:0;
+      font-family:'Segoe UI', Roboto, Arial, sans-serif;
+      background:#1c1c1c;
+      color:#f5f5f5;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+    }
+    .card{
+      width:100%;
+      max-width:600px;
+      background:#2c2c2c;
+      border-radius:14px;
+      padding:24px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+      position:relative;
+      overflow:hidden;
+    }
+    header{margin-bottom:16px; text-align:center}
+    h1{margin:0; font-size:26px; color:#eabfff}
+    p.lead{margin:8px 0 0; color:#ccc; font-size:15px}
+    .age{display:inline-block; background:#444; color:#ffd700; padding:4px 8px; border-radius:999px; font-weight:600; margin-left:6px; font-size:14px}
+    .gift-box{background:#3b3b3b; border-radius:12px; padding:18px; text-align:center; margin-top:18px; border:1px solid #555}
+    .gift-box h2{color:#ffd700; margin:0 0 10px; font-size:18px}
+    .gift-code{font-family:monospace; font-size:18px; letter-spacing:2px; margin:12px 0; padding:10px; background:#1c1c1c; border:1px dashed #777; border-radius:8px; word-break:break-all; color:#fff}
+    .btn{display:inline-flex; gap:6px; align-items:center; padding:8px 14px; border-radius:8px; border:0; cursor:pointer; font-weight:600; font-size:14px}
+    .btn-primary{background:#8e44ad; color:#fff}
+    .btn-ghost{background:transparent; border:1px solid #aaa; color:#eee}
+    .small{font-size:14px; color:#ddd}
     canvas#confetti{position:absolute; inset:0; pointer-events:none}
-    @media (max-width:820px){main{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
   </style>
 </head>
 <body>
   <div class="card" role="main">
     <canvas id="confetti"></canvas>
     <header>
-      <div class="avatar" aria-hidden="true">E</div>
-      <div>
-        <h1>¡Feliz cumpleaños, Estela! <span class="age">20</span></h1>
-        <p class="lead">Hoy — <time datetime="2025-10-03">3 de octubre de 2025</time> — celebramos a una amiga increíble.</p>
-      </div>
+      <h1>Feliz cumpleaños, Estela♥️<span class="age">20</span></h1>
+      <p class="lead">Hoy - <time datetime="2025-10-04">4 de octubre de 2025</time> - celebramos a una amiga increíble.</p>
     </header>
 
-    <main>
-      <section class="left">
-        <div class="gift-box">
-          <h2>Tu código de regalo de Minecraft 🎮</h2>
-          <p class="small">Haz clic en "Revelar" para ver el código — puedes copiarlo o usarlo cuando quieras.</p>
+    <section class="gift-box">
+      <h2>Un mensaje personal</h2>
+      <p class="small">Querida Estela, otro año mas a pasado desde la anterior vez que estuvimos bromeando sobre nuestro cumpleaños y bueno aquí otra vez, en otro cumpleaños mas, además de haber fortalecido nuestra relación en el trascurso de este año, te estoy completamente agradecido de que hayas aparecido en mi vida, eres lo mejor que me ha pasado, eres una amiga estupenda en serio y sin nada mas que decir, te quiero y te aprecio muchísimo.</p>
+    </section>
 
-          <div id="masked" style="margin-top:16px">
-            <div class="gift-code" id="codeMasked">••••-••••-••••</div>
-            <div style="display:flex; gap:12px; justify-content:center; margin-top:10px">
-              <button class="btn btn-primary" id="revealBtn">Revelar</button>
-              <button class="btn btn-ghost" id="copyBtn">Copiar</button>
-            </div>
-          </div>
-
-          <div id="revealed" style="display:none; margin-top:16px">
-            <div class="gift-code" id="giftCode">MINECRAFT-REGALO-20</div>
-            <div style="display:flex; gap:12px; justify-content:center; margin-top:10px">
-              <button class="btn btn-primary" id="celebrateBtn">¡Celebrar! 🎉</button>
-              <button class="btn btn-ghost" id="shareBtn">Compartir</button>
-            </div>
-            <p class="small" style="margin-top:12px">Este es tu regalo: un código de Minecraft. ¡Disfrútalo mucho! 😄</p>
-          </div>
+    <section class="gift-box">
+      <h2>¡Tu regalo a que esperas para verlo!</h2>
+      <div id="masked" style="margin-top:12px">
+        <div class="gift-code" id="codeMasked">•••••-•••••-•••••-•••••-•••••</div>
+        <div style="display:flex; gap:8px; justify-content:center; margin-top:8px; flex-wrap:wrap">
+          <button class="btn btn-primary" id="revealBtn">Revelar</button>
+          
         </div>
+      </div>
 
-        <div class="gift-box" style="margin-top:20px">
-          <h2>Un mensaje personal 💌</h2>
-          <p class="small">Aquí puedes escribir unas palabras para Estela:</p>
-          <textarea id="personalMsg" placeholder="Escribe tu mensaje aquí..."></textarea>
+      <div id="revealed" style="display:none; margin-top:12px">
+        <div class="gift-code" id="giftCode">P99F4-DY3Y7-V2Y2Y-XH2TR-DW4YZ</div>
+        <div style="display:flex; gap:8px; justify-content:center; margin-top:8px; flex-wrap:wrap">
+          <button class="btn btn-primary" id="celebrateBtn">Celebrar</button>
+          <button class="btn btn-ghost" id="copyBtn">Copiar</button>
         </div>
+        <p class="small" style="margin-top:10px">Este regalo es conjunto con el Marc, es un código para obtener el Minecraft :D</p>
+      </div>
+    </section>
 
-        <footer>
-          <p class="small">Sube este archivo como <em>index.html</em> a GitHub Pages para obtener un enlace y compartirlo con Estela.</p>
-        </footer>
-      </section>
-
-      <aside class="right">
-        <div class="panel">
-          <h3>Detalles rápidos</h3>
-          <ul>
-            <li><strong>Amiga:</strong> Estela</li>
-            <li><strong>Edad:</strong> 20</li>
-            <li><strong>Fecha:</strong> 3 oct 2025</li>
-            <li><strong>Código Minecraft:</strong> <code>MINECRAFT-REGALO-20</code></li>
-          </ul>
+    <section class="gift-box">
+      <h2>¡Y aquí otro regalo de mi parte!</h2>
+      <div id="masked2" style="margin-top:12px">
+        <div class="gift-code" id="codeMasked2">••••••••• •••••</div>
+        <div style="display:flex; gap:8px; justify-content:center; margin-top:8px; flex-wrap:wrap">
+          <button class="btn btn-primary" id="revealBtn2">Revelar</button>
         </div>
+      </div>
 
-        <div style="height:12px"></div>
-
-        <div class="panel">
-          <h3>Cómo usar</h3>
-          <ol class="small">
-            <li>Descarga este archivo como <code>index.html</code>.</li>
-            <li>Súbelo a un repositorio en GitHub y activa GitHub Pages.</li>
-            <li>Comparte el enlace con Estela.</li>
-          </ol>
+      <div id="revealed2" style="display:none; margin-top:12px">
+        <div class="gift-code" id="giftCode2">Bendición Lunar</div>
+        <div style="display:flex; gap:8px; justify-content:center; margin-top:8px; flex-wrap:wrap">
+          <button class="btn btn-primary" id="celebrateBtn2">Celebrar</button>
         </div>
-      </aside>
-    </main>
+        <p class="small" style="margin-top:10px">Este es regalo a parte que te quise hacer yo :)</p>
+        <p class="small" style="margin-top:0px">No se como lo quieres hacer, entro en tu cuenta o te hago bizum ;)</p>
+      </div>
+    </section>
   </div>
 
   <script>
-    // Basic reveal / copy / share logic
     const revealBtn = document.getElementById('revealBtn');
     const copyBtn = document.getElementById('copyBtn');
     const revealed = document.getElementById('revealed');
     const masked = document.getElementById('masked');
     const giftCodeEl = document.getElementById('giftCode');
-    const codeMasked = document.getElementById('codeMasked');
     const celebrateBtn = document.getElementById('celebrateBtn');
-    const shareBtn = document.getElementById('shareBtn');
+    const revealBtn2 = document.getElementById('revealBtn2');
+    const copyBtn2 = document.getElementById('copyBtn2');
+    const revealed2 = document.getElementById('revealed2');
+    const masked2 = document.getElementById('masked2');
+    const giftCodeEl2 = document.getElementById('giftCode2');
+    const celebrateBtn2 = document.getElementById('celebrateBtn2');
 
-    let giftCode = 'MINECRAFT-REGALO-20';
+    let giftCode = 'P99F4-DY3Y7-V2Y2Y-XH2TR-DW4YZ';
     giftCodeEl.textContent = giftCode;
+    let giftCode2 = 'Bendición Lunar';
+    giftCodeEl2.textContent = giftCode2;
 
     revealBtn.addEventListener('click', ()=>{
       masked.style.display = 'none';
@@ -124,26 +119,28 @@
       giftCodeEl.animate([{transform:'scale(0.98)'},{transform:'scale(1.04)'},{transform:'scale(1)'}],{duration:700, easing:'ease'});
     });
 
+    revealBtn2.addEventListener('click', ()=>{
+      masked2.style.display = 'none';
+      revealed2.style.display = 'block';
+      launchConfetti();
+      giftCodeEl2.animate(
+        [{transform:'scale(0.98)'},{transform:'scale(1.04)'},{transform:'scale(1)'}],
+        {duration:700, easing:'ease'}
+      );
+    });
+
     copyBtn.addEventListener('click', async ()=>{
       try{
         await navigator.clipboard.writeText(giftCode);
-        copyBtn.textContent = 'Copiado ✅';
+        copyBtn.textContent = 'Copiado';
         setTimeout(()=>copyBtn.textContent = 'Copiar',2000);
       }catch(e){
         copyBtn.textContent = 'No disponible';
       }
     });
 
-    celebrateBtn.addEventListener('click', ()=>{ launchConfetti(120); celebrateBtn.textContent='¡Yay! 🎉'; setTimeout(()=>celebrateBtn.textContent='¡Celebrar! 🎉',2500); });
-
-    shareBtn.addEventListener('click', ()=>{
-      const text = `¡Feliz cumple Estela! Tu código de Minecraft: ${giftCode}`;
-      if(navigator.share){
-        navigator.share({title:'Código de regalo - Minecraft', text});
-      }else{
-        prompt('Copia y comparte este mensaje:', text);
-      }
-    });
+    celebrateBtn.addEventListener('click', ()=>{ launchConfetti(120); celebrateBtn.textContent='¡Yay!'; setTimeout(()=>celebrateBtn.textContent='Celebrar',2500); });
+    celebrateBtn2.addEventListener('click', ()=>{ launchConfetti(120); celebrateBtn2.textContent='¡Yay!'; setTimeout(()=>celebrateBtn2.textContent='Celebrar',2500); });
 
     function launchConfetti(particles=60){
       const canvas = document.getElementById('confetti');
